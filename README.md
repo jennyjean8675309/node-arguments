@@ -7,8 +7,8 @@ This lesson will cover the Node command-line arguments and how to access them.
 ## Objectives
 
 1. Describe how the CLI argument input to Node script works
-1. Describe an argument array
-2. Describe first arguments
+2. Describe an argument array
+3. Describe first arguments
 
 ## CLI Arguments
 
