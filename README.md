@@ -18,7 +18,7 @@ How do we pass data to Node? `node` is just a command-line program and we can pa
 $ node sum.js 10 47
 ```
 
-The result will be 57. We can pass numbers or strings. This approach is useful when you're running scripts which require small enough input that you can fit in in the command line, or whin building command-line tools with Node. Another use caes is when you have a complex program that needs to be launched in different modes, e.g., development mode with more verbose logging.
+The result of `10 + 47` is 57. We can pass numbers or strings as arguments. This approach is useful when you're running scripts which require small enough input that you can fit in in the command line, or when building command-line tools with Node. Another use case is when you have a complex program that needs to be launched in different modes, e.g., development mode with more verbose logging versus production mode.
 
 ## Accessing Arguments
 
