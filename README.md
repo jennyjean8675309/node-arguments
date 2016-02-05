@@ -22,7 +22,7 @@ The result of `10 + 47` is 57. We can pass numbers or strings as arguments. This
 
 ## Accessing Arguments
 
-You've learned how to pass arguments, but how can you access them when you write your own program instead of using existing programs like sum.js? It's straightforward. All you need is to access `process.argv`. It's an array so all the Array methods available. 
+You've learned how to pass arguments, but how can you access them when you write your own program instead of using existing programs like `sum.js`? It's straightforward. All you need is to access `process.argv`, which is an array of the arguments passed to the file. All JavaScript array methods are available. 
 
 Consider the sum.js program. I'm using `shift` to get rid of the first two elements and then `forEach()` to iterate through indefinite number of arguments. I convert each argument to a number and add them up to the `sum` variable:
 
@@ -68,7 +68,7 @@ Can you guess what will it output? That's right. The numbers will start from the
 [ '/usr/local/bin/node', '10', '47' ]
 ```
 
-When working with `process.argv`, be mindful of the first arguments. They might not be the data you expect. 
+When working with `process.argv`, it's important to be mindful of the first arguments. They might not be the data you expect. 
 
 
 ## Resources
