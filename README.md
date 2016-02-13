@@ -2,7 +2,9 @@
 
 ## Overview
 
-This lesson will cover the Node command-line arguments and how to access them.
+Programs are more functional when we can change the input. If there's no way to change the input,  it has to be hard-coded (written in the code) in the source code and this is a very bad practice. Imagine a function that calculates the sum of numbers. The numbers are hard-coded in the source code. You're doing your taxes, and each time you need to do a new calculation (that mad cash you make after finishing this course and getting a job as the Node engineer!), you go to your file, change the values, hit save and re-run the program. No bueno. What if you make a mistake in the code—delete some symbol when you're editing the number. And saving the file each time you need to calculate a sum slows you down.
+
+You program need to have an input which is independent of the source code (the program itsefl). The easiest way to implement such input is to use command-line arguments. This lesson will cover the Node command-line arguments and how to access them.
 
 ## Objectives
 
@@ -56,17 +58,21 @@ The exact `process.argv` array will look like (on my machine):
 ```
 
 
-Just for fun, take a look at this command in which we use `-e` to execute code right away without saving it to a file:
+Just for fun, take a look at this command in which we use `-e` to execute code right away without saving it to a file (without saving means there's no file, none, zip, nada!):
 
 ```
 $ node -e "console.log(process.argv)" 10 47
 ```
+
+Note: If you need a refresher on the `-e` option, go back to [node-run-node](https://github.com/learn-co-curriculum/node-run-node).
 
 Can you guess what will it output? That's right. The numbers will start from the second argument, not third as in the `sum.js` example:
 
 ```
 [ '/usr/local/bin/node', '10', '47' ]
 ```
+
+The difference is self evident when you look at the command. The first command had two arguments (`node` and the name of the file) and the second command (`-e`) only one which was `node`.
 
 When working with `process.argv`, it's important to be mindful of the first arguments. They might not be the data you expect. 
 
