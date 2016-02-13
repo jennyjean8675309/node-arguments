@@ -48,7 +48,7 @@ $ node sum 10 47
 
 Note: The `.js` extension is optional. Node will try to match the filename to what's in the folder. If there's a `sum.js` file, it will run it.
 
-The exact `process.argv` array will look like (on my machine):
+The `process.argv` array will look something like this:
 
 ```
 [ '/usr/local/bin/node',
@@ -57,6 +57,7 @@ The exact `process.argv` array will look like (on my machine):
   '47' ]
 ```
 
+It will have four items. The first two might be different on your machine, but the `10` and `47` will be the same.
 
 Just for fun, take a look at this command in which we use `-e` to execute code right away without saving it to a file (without saving means there's no file, none, zip, nada!):
 
