@@ -4,7 +4,7 @@
 
 Programs are more functional when we can change the input. If there's no way to change the input,  it has to be hard-coded in the source code and this is a very bad practice. Imagine a function that calculates the sum of numbers. The numbers are hard-coded in the source code. You're doing your taxes, and each time you need to do a new calculation (that mad cash you make after finishing this course and getting a job as the Node engineer!), you go to your file, change the values, hit save and re-run the program. No bueno. What if you make a mistake in the code and delete some symbol when you're editing the number? And saving the file each time you need to calculate a sum slows you down.
 
-You program needs to have an input which is independent of the source code (the program itself). The easiest way to implement such input is to use command-line arguments. This lesson will cover the Node command-line arguments and how to access them.
+Your program needs to have an input which is independent of the source code (the program itself). The easiest way to implement such input is to use command-line arguments. This lesson will cover the Node command-line arguments and how to access them.
 
 ## Objectives
 
@@ -90,3 +90,5 @@ When working with `process.argv`, it's important to be mindful of the first argu
 ---
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/node-arguments' title='node-arguments'>node-arguments</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/node-arguments'>Node Arguments</a> on Learn.co and start learning to code for free.</p>
