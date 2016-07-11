@@ -4,7 +4,7 @@
 
 Programs are more functional when we can change the input. If there's no way to change the input, it has to be hard-coded in the source code and this is a very bad practice. Imagine a function that calculates the sum of numbers. The numbers are hard-coded in the source code. You're doing your taxes, and each time you need to do a new calculation, you go to your file, change the values, hit save and re-run the program. What if you make a mistake in the code and delete some symbol when you're editing the number? And saving the file each time you need to calculate a sum will slow you down.
 
-You program needs to have an input which is independent of the source code (the program itself). The easiest way to implement such an input is to use command-line arguments. This lesson will cover the Node command-line arguments and how to access them.
+Your program needs to have an input which is independent of the source code (the program itself). The easiest way to implement such input is to use command-line arguments. This lesson will cover the Node command-line arguments and how to access them.
 
 ## Objectives
 
@@ -24,7 +24,7 @@ The result of `10 + 47` is 57. We can pass numbers or strings as arguments. This
 
 ## Accessing Arguments
 
-You've learned how to pass arguments, but how can you access them when you write your own program instead of using existing programs like `sum.js`? It's straightforward. All you need is to access `process.argv`, which is an array of the arguments passed to the file. All JavaScript array methods are available. 
+You've learned how to pass arguments, but how can you access them when you write your own program instead of using existing programs like `sum.js`? It's straightforward. All you need is to access `process.argv`, which is an array of the arguments passed to the file. All JavaScript array methods are available.
 
 Consider the sum.js program. First we use `shift` to get rid of the first two elements and then `forEach()` to iterate through an indefinite number of arguments. Then we convert each argument to a number and add them up to the `sum` variable:
 
@@ -75,7 +75,7 @@ Can you guess what it will output? That's right. The numbers will start from the
 
 The difference is self evident when you look at the command. The first command had two arguments (`node` and the name of the file) and the second command (`-e`) only one which was `node`.
 
-When working with `process.argv`, it's important to be mindful of the first arguments. They might not be the data you expect. 
+When working with `process.argv`, it's important to be mindful of the first arguments. They might not be the data you expect.
 
 
 ## Resources
@@ -90,3 +90,5 @@ When working with `process.argv`, it's important to be mindful of the first argu
 ---
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/node-arguments' title='node-arguments'>node-arguments</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/node-arguments'>Node Arguments</a> on Learn.co and start learning to code for free.</p>
